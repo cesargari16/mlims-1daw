@@ -1,0 +1,62 @@
+a. Name of Institute:
+
+<name>IES Abastos</name>
+
+XPath Query: /secondary-school/name
+[Line 3] name: IES Abastos
+
+b. School website:
+
+http://www.iesabastos.org
+
+XPath Query: /secondary-school/web
+[Line 4] web: http://www.iesabastos.org
+
+c. Name of Training Cycles:
+
+Administration of Computer Network Systems
+Web applications development
+Microcomputer systems and networks
+
+d. Acronyms by which the Formative Cycles are known:
+
+id="NISA"
+id="WAD"
+id="MSN"
+
+e. Years in which the title decrees of the Formative Cycles were published:
+
+year="2009"
+year="2010"
+year="2008"
+
+f.Intermediate Training Cycles (it is about obtaining the complete element):
+
+Note: Solve this exercise in two different ways, in a single search step and in two search steps.
+
+  <cycle id="MSN">
+    <name>Microcomputer Systems and Networks</name>
+    <grade>Medium</grade>
+    <decreeTitle year="2008"/>
+  </cycle>
+
+g. Name of Higher Level Training Cycles:
+
+Note: Solve this exercise in two different ways, in a single search step and in two search steps.
+
+<name>Network Information Systems Administration</name>
+<name>Web Application Development</name>
+
+h. Name of Training Cycles prior to 2010:
+
+Note: Solve this exercise in two different ways, in a single search step and in two search steps.
+
+Administration of Computer Network Systems
+Microcomputer systems and networks
+
+h. Name of the Formative Cycles of 2008 or 2010:
+
+Note: Solve this exercise in two different ways, in a single search step and in two search steps.
+
+Web application development
+Microcomputer systems and networks

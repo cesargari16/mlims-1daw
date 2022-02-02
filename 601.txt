@@ -18,17 +18,23 @@ Administration of Computer Network Systems
 Web applications development
 Microcomputer systems and networks
 
+XPath Query: /secondary-school/cycles/cycle/name/text()
+
 d. Acronyms by which the Formative Cycles are known:
 
 id="NISA"
 id="WAD"
 id="MSN"
 
+XPath Query: //cycle/@id
+
 e. Years in which the title decrees of the Formative Cycles were published:
 
 year="2009"
 year="2010"
 year="2008"
+
+XPath Query: //@year
 
 f.Intermediate Training Cycles (it is about obtaining the complete element):
 
@@ -39,6 +45,8 @@ Note: Solve this exercise in two different ways, in a single search step and in 
     <grade>Medium</grade>
     <decreeTitle year="2008"/>
   </cycle>
+  
+XPath Query: //cycle[@id="$SN"]
 
 g. Name of Higher Level Training Cycles:
 
@@ -47,6 +55,8 @@ Note: Solve this exercise in two different ways, in a single search step and in 
 <name>Network Information Systems Administration</name>
 <name>Web Application Development</name>
 
+XPath Query: //cycle[grade="Higher"]/name
+
 h. Name of Training Cycles prior to 2010:
 
 Note: Solve this exercise in two different ways, in a single search step and in two search steps.
@@ -54,9 +64,18 @@ Note: Solve this exercise in two different ways, in a single search step and in 
 Administration of Computer Network Systems
 Microcomputer systems and networks
 
-h. Name of the Formative Cycles of 2008 or 2010:
+XPath Query: //cycle/name[../decreeTitle/@year<2010]
+
+[Line 7] name: Network Information Systems Administration
+[Line 17] name: Microcomputer Systems and Networks
+
+i. Name of the Formative Cycles of 2008 or 2010:
 
 Note: Solve this exercise in two different ways, in a single search step and in two search steps.
 
 Web application development
 Microcomputer systems and networks
+
+XPath Query: //@year[.!=2009]/../../name
+            
+            //@year[.=2008 or .=2010/../../name]

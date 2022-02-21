@@ -1,0 +1,62 @@
+a. Name of the modules taught at the School:
+
+Web applications
+Database management
+Markup languages ​​and information management systems
+Implementation of web applications
+
+//module/name/text()
+
+b. Name of the NISA cycle modules:
+
+Note: Solve this exercise in two different ways, in a single search step and in two search steps.
+
+
+Database management
+Markup languages ​​and information management systems
+Implementation of web applications
+
+//cycle[.="NISA"]/../name/text()
+
+c. Name of the modules taught in the second year of any cycle:
+
+Note: Solve this exercise in two different ways, in a single search step and in two search steps.
+
+
+Web applications
+Implementation of web applications
+
+//course[=2]/../name/text()
+
+d. Name of the modules of less than 5 hours per week:
+
+Note: Solve this exercise in two different ways, in a single search step and in two search steps.
+
+
+Web applications
+Markup languages ​​and information management systems
+
+//module/hoursWeekly[.<5]/../name/text()
+
+//name[../hoursWeekly<5]/text()
+
+e. Name of the modules taught in the first NISA course:
+
+Note: Solve this exercise in two different ways, in a single search step and in two search steps.
+
+
+Database management
+Markup languages ​​and information management systems
+
+//module[cycle="NISA" and course=1]/../name/text()
+
+f. Weekly hours of modules of more than 3 hours per week:
+
+Note: Solve this exercise in two different ways, in a single search step and in two search steps.
+
+
+4
+5
+5
+
+//hoursWeekly[>3]/../
